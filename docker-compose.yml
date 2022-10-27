@@ -1,0 +1,10 @@
+
+version: '3.9'
+services:
+  apache:
+    image: httpd
+    container_name: projeto_docker_apache
+    ports:
+    - '80:80'
+    volumes:
+    - /projeto:/usr/local/apache2/htdocs
